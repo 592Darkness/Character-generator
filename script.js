@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
   const nameInput = document.getElementById('name');
   const genderInput = document.getElementById('gender');
-  const raceInput = document.getElementById('race');
+  const speciesInput = document.getElementById('species');
   const ageInput = document.getElementById('age');
   const occupationInput = document.getElementById('occupation');
   const locationInput = document.getElementById('location');
@@ -19,8 +19,8 @@ document.addEventListener('DOMContentLoaded', () => {
       return;
     }
     const gender = genderInput.value.trim();
-    const raceOptions = Array.from(raceInput.selectedOptions).map(option => option.value);
-    const race = raceOptions.length > 0 ? raceOptions.join(' and ') : '';
+    const speciesOptions = Array.from(speciesInput.selectedOptions).map(option => option.value);
+    const species = speciesOptions.length > 0 ? speciesOptions.join(' and ') : '';
     const age = ageInput.value.trim();
     const occupation = occupationInput.value.trim();
     const location = locationInput.value.trim();
@@ -33,7 +33,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     let descriptionParts = [];
     if (gender) descriptionParts.push(gender.toLowerCase());
-    if (race) descriptionParts.push(race.toLowerCase());
+    if (species) descriptionParts.push(species.toLowerCase());
     if (age && occupation && location) {
       const article = getArticle(occupation);
       descriptionParts.push(`${age}-year-old ${occupation} from ${location}`);
