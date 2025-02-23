@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Character Forge</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>AI Character Forge</h1>
+    <p class="subtitle">Craft vivid souls for your digital realm. Start with a name—forge the rest.</p>
+
+    <div id="character-form">
+      <div>
+        <label for="name">Name*:</label>
+        <input type="text" id="name" placeholder="e.g., Zane" required>
+      </div>
+
+      <div>
+        <label for="gender">Gender (optional):</label>
+        <select id="gender">
+          <option value="">Select Gender</option>
+          <option value="Male">Male</option>
+          <option value="Female">Female</option>
+        </select>
+      </div>
+
+      <div>
+        <label for="race">Race/Ethnicity (optional, multi-select):</label>
+        <select id="race" multiple>
+          <option value="Asian">Asian</option>
+          <option value="Black">Black</option>
+          <option value="White">White</option>
+          <option value="Hispanic">Hispanic</option>
+          <option value="Indigenous">Indigenous</option>
+          <option value="Middle Eastern">Middle Eastern</option>
+          <option value="Mixed">Mixed</option>
+          <option value="Other">Other</option>
+        </select>
+      </div>
+
+      <div>
+        <label for="age">Age (optional):</label>
+        <input type="number" id="age" placeholder="e.g., 28">
+      </div>
+
+      <div>
+        <label for="occupation">Occupation (optional):</label>
+        <input type="text" id="occupation" placeholder="e.g., Hacker">
+      </div>
+
+      <div>
+        <label for="location">Location (optional):</label>
+        <input type="text" id="location" placeholder="e.g., Tokyo">
+      </div>
+
+      <fieldset>
+        <legend>Emotional Traits (optional)</legend>
+        <div class="traits-grid">
+          <label><input type="checkbox" name="common-traits" value="cheerful"> Cheerful</label>
+          <label><input type="checkbox" name="common-traits" value="grumpy"> Grumpy</label>
+          <label><input type="checkbox" name="common-traits" value="anxious"> Anxious</label>
+          <label><input type="checkbox" name="common-traits" value="melancholy"> Melancholy</label>
+          <label><input type="checkbox" name="common-traits" value="optimistic"> Optimistic</label>
+          <label><input type="checkbox" name="common-traits" value="pessimistic"> Pessimistic</label>
+          <label><input type="checkbox" name="common-traits" value="dreamy"> Dreamy</label>
+          <label><input type="checkbox" name="common-traits" value="fearful"> Fearful</label>
+          <label><input type="checkbox" name="common-traits" value="jovial"> Jovial</label>
+          <label><input type="checkbox" name="common-traits" value="vibrant"> Vibrant</label>
+          <label><input type="checkbox" name="common-traits" value="bitter"> Bitter</label>
+          <label><input type="checkbox" name="common-traits" value="calm"> Calm</label>
+          <label><input type="checkbox" name="common-traits" value="envious"> Envious</label>
+          <label><input type="checkbox" name="common-traits" value="hopeful"> Hopeful</label>
+          <label><input type="checkbox" name="common-traits" value="restless"> Restless</label>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Social Traits (optional)</legend>
+        <div class="traits-grid">
+          <label><input type="checkbox" name="common-traits" value="shy"> Shy</label>
+          <label><input type="checkbox" name="common-traits" value="funny"> Funny</label>
+          <label><input type="checkbox" name="common-traits" value="sarcastic"> Sarcastic</label>
+          <label><input type="checkbox" name="common-traits" value="charming"> Charming</label>
+          <label><input type="checkbox" name="common-traits" value="playful"> Playful</label>
+          <label><input type="checkbox" name="common-traits" value="aloof"> Aloof</label>
+          <label><input type="checkbox" name="common-traits" value="gregarious"> Gregarious</label>
+          <label><input type="checkbox" name="common-traits" value="tactful"> Tactful</label>
+          <label><input type="checkbox" name="common-traits" value="witty"> Witty</label>
+          <label><input type="checkbox" name="common-traits" value="zealous"> Zealous</label>
+          <label><input type="checkbox" name="common-traits" value="blunt"> Blunt</label>
+          <label><input type="checkbox" name="common-traits" value="charismatic"> Charismatic</label>
+          <label><input type="checkbox" name="common-traits" value="gossipy"> Gossipy</label>
+          <label><input type="checkbox" name="common-traits" value="outgoing"> Outgoing</label>
+          <label><input type="checkbox" name="common-traits" value="reclusive"> Reclusive</label>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Behavioral Traits (optional)</legend>
+        <div class="traits-grid">
+          <label><input type="checkbox" name="common-traits" value="adventurous"> Adventurous</label>
+          <label><input type="checkbox" name="common-traits" value="reckless"> Reckless</label>
+          <label><input type="checkbox" name="common-traits" value="impulsive"> Impulsive</label>
+          <label><input type="checkbox" name="common-traits" value="bold"> Bold</label>
+          <label><input type="checkbox" name="common-traits" value="lazy"> Lazy</label>
+          <label><input type="checkbox" name="common-traits" value="patient"> Patient</label>
+          <label><input type="checkbox" name="common-traits" value="quirky"> Quirky</label>
+          <label><input type="checkbox" name="common-traits" value="unpredictable"> Unpredictable</label>
+          <label><input type="checkbox" name="common-traits" value="eccentric"> Eccentric</label>
+          <label><input type="checkbox" name="common-traits" value="devious"> Devious</label>
+          <label><input type="checkbox" name="common-traits" value="cautious"> Cautious</label>
+          <label><input type="checkbox" name="common-traits" value="disciplined"> Disciplined</label>
+          <label><input type="checkbox" name="common-traits" value="methodical"> Methodical</label>
+          <label><input type="checkbox" name="common-traits" value="spontaneous"> Spontaneous</label>
+          <label><input type="checkbox" name="common-traits" value="timid"> Timid</label>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Intellectual Traits (optional)</legend>
+        <div class="traits-grid">
+          <label><input type="checkbox" name="common-traits" value="serious"> Serious</label>
+          <label><input type="checkbox" name="common-traits" value="curious"> Curious</label>
+          <label><input type="checkbox" name="common-traits" value="creative"> Creative</label>
+          <label><input type="checkbox" name="common-traits" value="wise"> Wise</label>
+          <label><input type="checkbox" name="common-traits" value="naive"> Naive</label>
+          <label><input type="checkbox" name="common-traits" value="introspective"> Introspective</label>
+          <label><input type="checkbox" name="common-traits" value="mysterious"> Mysterious</label>
+          <label><input type="checkbox" name="common-traits" value="sly"> Sly</label>
+          <label><input type="checkbox" name="common-traits" value="cynical"> Cynical</label>
+          <label><input type="checkbox" name="common-traits" value="confident"> Confident</label>
+          <label><input type="checkbox" name="common-traits" value="analytical"> Analytical</label>
+          <label><input type="checkbox" name="common-traits" value="doubtful"> Doubtful</label>
+          <label><input type="checkbox" name="common-traits" value="imaginative"> Imaginative</label>
+          <label><input type="checkbox" name="common-traits" value="logical"> Logical</label>
+          <label><input type="checkbox" name="common-traits" value="perceptive"> Perceptive</label>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Moral Traits (optional)</legend>
+        <div class="traits-grid">
+          <label><input type="checkbox" name="common-traits" value="brave"> Brave</label>
+          <label><input type="checkbox" name="common-traits" value="kind"> Kind</label>
+          <label><input type="checkbox" name="common-traits" value="stubborn"> Stubborn</label>
+          <label><input type="checkbox" name="common-traits" value="loyal"> Loyal</label>
+          <label><input type="checkbox" name="common-traits" value="ruthless"> Ruthless</label>
+          <label><input type="checkbox" name="common-traits" value="compassionate"> Compassionate</label>
+          <label><input type="checkbox" name="common-traits" value="humble"> Humble</label>
+          <label><input type="checkbox" name="common-traits" value="gentle"> Gentle</label>
+          <label><input type="checkbox" name="common-traits" value="resilient"> Resilient</label>
+          <label><input type="checkbox" name="common-traits" value="stoic"> Stoic</label>
+          <label><input type="checkbox" name="common-traits" value="duty-bound"> Duty-bound</label>
+          <label><input type="checkbox" name="common-traits" value="forgiving"> Forgiving</label>
+          <label><input type="checkbox" name="common-traits" value="honest"> Honest</label>
+          <label><input type="checkbox" name="common-traits" value="selfish"> Selfish</label>
+          <label><input type="checkbox" name="common-traits" value="vindictive"> Vindictive</label>
+        </div>
+      </fieldset>
+
+      <div>
+        <label for="custom-traits">Custom Traits (comma-separated, optional):</label>
+        <input type="text" id="custom-traits" placeholder="e.g., cunning, resourceful">
+      </div>
+
+      <div>
+        <label for="background">Background (optional):</label>
+        <textarea id="background" placeholder="e.g., You’ve spent years mastering code..."></textarea>
+      </div>
+
+      <div>
+        <label for="scenario">Scenario (optional):</label>
+        <textarea id="scenario" placeholder="e.g., infiltrating a corporate network"></textarea>
+      </div>
+
+      <div>
+        <label for="optional-details">Additional Details (optional):</label>
+        <textarea id="optional-details" placeholder="e.g., You thrive in chaos..."></textarea>
+      </div>
+
+      <button id="generate-btn">Forge Character</button>
+    </div>
+
+    <div>
+      <label for="prompt-output">Forged Prompt:</label>
+      <textarea id="prompt-output" readonly placeholder="Your character will emerge here..."></textarea>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
